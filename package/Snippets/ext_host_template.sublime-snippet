@@ -1,0 +1,17 @@
+<snippet>
+	<tabTrigger>contact</tabTrigger>
+	<scope>source.shinken</scope>
+	<description>Shinken ext. Host Template</description>
+
+	<content><![CDATA[
+host \{
+	use					${1:template}
+	host_name			${2:name}
+	alias				${3:alias}
+	address				${4:ip-address}
+	check_command		bp_rule!(h1,database1 & !h2,database2)	
+	business_impact		5
+\}
+${0}
+]]></content>
+</snippet>
