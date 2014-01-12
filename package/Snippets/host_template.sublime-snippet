@@ -1,7 +1,7 @@
 <snippet>
 	<tabTrigger>host</tabTrigger>
 	<scope>source.shinken</scope>
-	<description>Shinken Host</description>
+	<description>Shinken Host Template</description>
 
 	<content><![CDATA[
 host \{
