@@ -1,5 +1,5 @@
 <snippet>
-	<tabTrigger>contact</tabTrigger>
+	<tabTrigger>host ext template</tabTrigger>
 	<scope>source.shinken</scope>
 	<description>Shinken ext. Host Template</description>
 
