@@ -30,3 +30,6 @@ type 'shinken' to shorten the list and select 'shinken-sublime'.
 4. Push to the develop branch (`git push develop my_branch`)
 5. Open a [Pull Request](https://github.com/Frescha/shinken-sublime/pulls)
 6. Enjoy a refreshing Diet Coke and wait :+1:
+
+
+Shinken-sublime is a fork of [nagios-sublime](https://github.com/bn0/nagios-sublime)
