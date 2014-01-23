@@ -3,11 +3,9 @@ shinken-sublime
 
 ###What is it?
 Welcome to shinken-sublime.
-Shinken-sublime is a small package that combine the power and elegance of Sublime with the Shinken monitoring framework.
+Shinken-sublime is a small package that combine the power and elegance of Sublime with the [Shinken monitoring framework](https://github.com/naparuba/shinken).
 
 Shinken-sublime provides syntax highlighting, block commenting, and snippet support for defining hosts/services etc.
-
-###Screenshots
 
 ###Installation
 Open the Command Pallete - press 'ctrl+shift+p' (Windows, Linux) or 'cmd+shift+p' (OS X).
