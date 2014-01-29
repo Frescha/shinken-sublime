@@ -1,0 +1,22 @@
+<snippet>
+	<tabTrigger>notificationway</tabTrigger>
+	<scope>source.shinken</scope>
+	<description>Shinken Notificationway</description>
+
+	<content><![CDATA[
+notificationway \{
+    notificationway_name            ${1:names}
+    service_notification_period     24x7
+    host_notification_period        24x7
+    service_notification_options    w,u,c,r,f
+    host_notification_options       d,u,r,f,s
+    service_notification_commands   notify-service
+    host_notification_commands      notify-host
+
+    ### Optional ###
+
+    min_business_impact             0
+\}
+${0}
+]]></content>
+</snippet>
