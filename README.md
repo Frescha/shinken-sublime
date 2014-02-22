@@ -1,4 +1,4 @@
-shinken-sublime
+Shinken-sublime
 ===============
 
 ###What is it?
@@ -8,18 +8,10 @@ Shinken-sublime is a small package that combine the power and elegance of Sublim
 Shinken-sublime provides syntax highlighting, block commenting, and snippet support for defining hosts/services etc.
 
 ###Installation
-Open the Command Pallete - press 'ctrl+shift+p' (Windows, Linux) or 'cmd+shift+p' (OS X).
-All Package Control commands begin with 'Package Control:', so view the list of commands by typing 'package'.
-Add Repository
-
-Package Control: Add Repository
-
-https://github.com/Frescha/shinken-sublime
-
-Install Package
-
-Package Control: Install Package
-type 'shinken' to shorten the list and select 'shinken-sublime'. 
+1. Install the Sublime Text Package Control plugin if you don't already have it: https://sublime.wbond.net/installation
+2. In Sublime Text choose: Tools > Command Palette… > Package Control: Install Package
+3. Find Shinken by typing in the search field, click on it to install it
+4. Restart Sublime Text
 
 ###Contributing
 1. Fork it.
