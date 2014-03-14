@@ -1,5 +1,5 @@
-Shinken-sublime
-===============
+Shinken
+=======
 
 ###What is it?
 Welcome to shinken-sublime.
