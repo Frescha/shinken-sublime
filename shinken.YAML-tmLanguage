@@ -1,0 +1,55 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+name: Shinken
+scopeName: source.shinken
+fileTypes: [cfg]
+uuid: ''
+
+patterns:
+- comment: '# comments'
+  name: comment.line.number-sign.shinken
+  match: ^[\s]*#.*
+
+- include: '#variable'
+
+- name: entity.name.section.shinken
+  begin: ^[\s]*(define)[\s]+([A-Za-z0-9_]+)[\s]*(\{)
+  beginCaptures:
+    '1': {name: storage.modifier.shinken}
+    '2': {name: support.type.shinken}
+    '3': {name: constant.character.shinken}
+  end: \}
+  endCaptures:
+    '0': {name: constant.character.shinken}
+  patterns:
+  - include: $self
+  - include: '#variable'
+  - include: '#separator'
+  - name: keyword.other.shinken
+    match: ^[\s]*use[\s]+([A-Za-z0-9_-]+)
+    captures:
+      '1': {name: support.variable.shinken}
+  - name: keyword.other.shinken
+    match: ^[\s]*[A-Za-z0-9_]+[\s]
+  - comment: In-line comments
+    name: comment.line.semi-colon.shinken
+    match: ;.*
+
+- name: string.quoted.double.shinken
+  begin: '"'
+  beginCaptures:
+    '0': {name: string.quoted.double.shinken}
+  end: '"'
+  patterns:
+  - include: '#variable'
+  - include: '#separator'
+
+repository:
+  separator:
+    comment: check_command separators
+    name: constant.character.shinken
+    match: '!'
+
+  variable:
+    comment: Variables like $SERVICESTATE$, $USER1$ etc
+    name: support.variable.shinken
+    match: \$([A-Za-z][A-Za-z0-9_]+)\$
