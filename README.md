@@ -1,5 +1,5 @@
-Shinken
-=======
+Shinken Sublime Package v1.0
+============================
 
 ###What is it?
 Welcome to shinken-sublime.
