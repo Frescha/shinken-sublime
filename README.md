@@ -1,4 +1,4 @@
-Shinken Sublime Package v1.0
+Shinken Sublime Package v1.0.0
 ============================
 
 ###What is it?
