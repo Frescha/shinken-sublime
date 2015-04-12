@@ -1,0 +1,41 @@
+fileTypes:
+- ini
+- INI
+name: Shinken
+patterns:
+- captures:
+    '1':
+      name: punctuation.definition.comment.ini
+  match: ^(;).*$\n?
+  name: comment.line.semi-colon.ini
+- captures:
+    '1':
+      name: punctuation.definition.section.ini
+    '2':
+      name: entity.section.ini
+    '3':
+      name: punctuation.definition.section.ini
+  match: ^\s*(\[)(.*?)(\])\s*
+  name: meta.tag.section.ini
+- captures:
+    '1':
+      name: meta.property.ini
+    '2':
+      name: punctuation.definition.quote.ini
+    '3':
+      name: keyword.name.ini
+    '4':
+      name: punctuation.definition.quote.ini
+    '5':
+      name: punctuation.definition.equals.ini
+    '6':
+      name: meta.value.ini
+    '7':
+      name: punctuation.definition.quote.ini
+    '8':
+      name: string.name.value.ini
+    '9':
+      name: punctuation.definition.quote.ini
+  match: ^(\s*(["']?)(.+?)(\2)\s*(=))?\s*((["']?)(.*?)(\7))\s*$\n?
+  name: meta.declaration.ini
+scopeName: source.ini
