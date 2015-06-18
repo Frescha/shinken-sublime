@@ -7,6 +7,12 @@ Shinken-sublime is a small package that combine the power and elegance of Sublim
 
 Shinken-sublime provides syntax highlighting, block commenting, and snippet support for defining hosts/services etc.
 
+###Compatible
+1. Shinken
+2. Alignak
+3. Nagios
+4. Icinga (untested)
+
 ###Installation
 1. Install the Sublime Text Package Control plugin if you don't already have it: https://sublime.wbond.net/installation
 2. In Sublime Text choose: Tools > Command Palette… > Package Control: Install Package
